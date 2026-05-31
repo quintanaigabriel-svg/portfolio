@@ -319,6 +319,46 @@ nav li.active{
 
 }
 
+.back-to-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    width:fit-content;
+
+    margin:80px auto 0;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    letter-spacing:0.5px;
+
+    text-transform:uppercase;
+
+    transition:opacity .3s ease;
+
+}
+
+.back-to-top:hover{
+
+    opacity:.5;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
 /*TABLET*/
 
 @media screen and (max-width:1024px){
