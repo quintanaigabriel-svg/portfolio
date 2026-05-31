@@ -1,18 +1,22 @@
-$(document).ready(function(){
+$(function () {
 
-    $('nav li').click(function(){
+    $("nav li").click(function () {
 
-        const filter = $(this).attr('data-filter');
+        $("nav li").removeClass("active");
 
-        if(filter === 'all'){
+        $(this).addClass("active");
 
-            $('.card').show();
+        let categoria = $(this).data("filter");
+
+        if (categoria === "all") {
+
+            $(".card").fadeIn(300);
 
         } else {
 
-            $('.card').hide();
+            $(".card").hide();
 
-            $('.' + filter).show();
+            $(".card." + categoria).fadeIn(300);
 
         }
 
