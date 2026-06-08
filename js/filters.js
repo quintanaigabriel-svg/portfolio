@@ -1,6 +1,6 @@
-$(function () {
+$(document).ready(function(){
 
-    $("nav li").click(function () {
+    $("nav li").click(function(){
 
         $("nav li").removeClass("active");
 
@@ -8,7 +8,7 @@ $(function () {
 
         let categoria = $(this).data("filter");
 
-        if (categoria === "all") {
+        if(categoria === "all"){
 
             $(".card").fadeIn(300);
 

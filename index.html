@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        
         <meta charset="utf-8"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
         <title>Gabo Quintana</title>
 
 
-        <link rel="styLesheet" href="estilos.css"> 
+        <link rel="stylesheet" href="estilos.css"> 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -29,17 +30,23 @@
 
         <ul>
 
-               
+         <li data-filter="all">Todos</li>
 
-               <li data-filter="branding">Branding</li>
+         <li data-filter="branding">Branding</li>
 
-               <li data-filter="editorial">Editorial</li>
+         <li data-filter="editorial">Editorial</li>
 
-               <li data-filter="tipografía">Tipografía</li>
+         <li data-filter="tipografia">Tipografía</li>
 
-               <li data-filter="packaging">Packaging</li>
+         <li data-filter="packaging">Packaging</li>
 
-        </ul>
+         <li>
+             <a href="paginas/contacto.html" class="contact-link">
+             Contacto
+             </a>
+         </li>
+
+      </ul>
     </nav>
 
         
@@ -49,7 +56,7 @@
 
     
         <a href="paginas/summerdays.html"
-           class="card packaging">
+           class="card packaging tipografia">
 
             <img src="img/summerdays/summerdaysthumbnail01.png"
                  alt="Summerdays">
@@ -62,7 +69,7 @@
                 </h2>
 
                 <ul>
-                    <li>+ Branding</li>
+                    
                     <li>+ Tipografía</li>
                     <li>+ Packaging</li>
                 </ul>
@@ -74,7 +81,7 @@
 
 
         <a href="paginas/thecaferider.html"
-           class="card tipografía">
+           class="card branding tipografia">
 
             <img src="img/thecaferider/caferiderthumbnail01.png"
                  alt="thecaferider">
@@ -88,7 +95,6 @@
 
                 <ul>
                     <li>+ Branding</li>
-                    <li>+ Editorial</li>
                     <li>+ Tipografía</li>
                 </ul>
 
@@ -98,7 +104,7 @@
 
         
         <a href="paginas/moo.html"
-           class="card editorial">
+           class="card branding editorial">
 
             <img src="img/moo/moothumbnail01.png"
                  alt="Moo">
@@ -120,9 +126,9 @@
         </a>
 
         <a href="paginas/buzz.html"
-           class="card branding">
+           class="card editorial packaging">
 
-            <img src="img/buzz/buzz thumbnail01.png"
+            <img src="img/buzz/buzzthumbnail01.png"
                  alt="buzz">
 
 
@@ -134,7 +140,7 @@
 
                 <ul>
                     <li>+Editorial</li>
-                    <li>+Branding</li>
+                    <li>+Packaging</li>
                 </ul>
 
             </div>
@@ -143,15 +149,12 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <script src="js/filter.js"></script>
-
-    <script src="js/gallery.js"></script>
-
-    <script src="js/script.js"></script>
+    
 
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/filters.js"></script>
 
     </body>
 </html>

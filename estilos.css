@@ -63,6 +63,10 @@ nav li:hover{
 
 }
 
+nav li.active{
+    font-weight:700;
+}
+
 .gallery{
 
     display:grid;
@@ -173,6 +177,168 @@ nav li.active{
     color:#000;
 
     font-weight:600;
+
+}
+
+.contact-page{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:120px 80px;
+
+}
+
+.contact-header{
+
+    margin-bottom:60px;
+
+}
+
+.contact-header h1{
+
+    font-size:64px;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+.contact-header p{
+
+    max-width:600px;
+
+    line-height:1.7;
+
+    color:#666;
+
+}
+
+/*FORMULARIO*/
+
+.contact-form{
+
+    max-width:900px;
+
+    margin-top:80px;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    margin-bottom:50px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    font-size:14px;
+
+    font-weight:500;
+
+    margin-bottom:10px;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px 0;
+
+    border:none;
+
+    border-bottom:1px solid #cfcfcf;
+
+    background:transparent;
+
+    font-size:16px;
+
+    font-family:inherit;
+
+}
+
+.form-group textarea{
+
+    min-height:220px;
+
+    resize:vertical;
+
+}
+
+.radio-group{
+
+    display:flex;
+
+    gap:30px;
+
+    margin-top:10px;
+
+    margin-bottom:50px;
+
+}
+
+.checkbox-group{
+
+    margin-top:30px;
+
+    margin-bottom:40px;
+
+}
+
+.form-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:20px;
+
+}
+
+.form-buttons button{
+
+    padding:14px 32px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-family:inherit;
+
+}
+
+.form-buttons button[type="reset"]{
+
+    background:#d9d9d9;
+
+}
+
+.form-buttons button[type="submit"]{
+
+    background:#111;
+
+    color:white;
 
 }
 
@@ -426,4 +592,32 @@ html{
 
 }
 
+@media (max-width:768px){
 
+    .contact-page{
+
+        padding:60px 25px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-header h1{
+
+        font-size:42px;
+
+    }
+
+    .radio-group{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+}
