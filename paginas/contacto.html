@@ -39,34 +39,101 @@
 
         <form class="contact-form">
 
-            <label>Nombre</label>
+    <div class="form-grid">
 
-            <input
-                type="text"
-                placeholder="Tu nombre"
-                required>
+        <div class="form-group">
 
-            <label>Email</label>
+            <label>Nombre *</label>
 
-            <input
-                type="email"
-                placeholder="nombre@email.com"
-                required>
+            <input type="text" required>
 
-            <label>Mensaje</label>
+        </div>
 
-            <textarea
-                rows="8"
-                placeholder="Escribí tu mensaje..."
-                required></textarea>
+        <div class="form-group">
 
-            <button type="submit">
+            <label>Apellido *</label>
 
-                Enviar
+            <input type="text" required>
 
-            </button>
+        </div>
 
-        </form>
+        <div class="form-group">
+
+            <label>Email *</label>
+
+            <input type="email" required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Teléfono</label>
+
+            <input type="tel">
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Tipo de consulta</label>
+
+        <select>
+
+            <option>Seleccionar</option>
+
+            <option>Proyecto freelance</option>
+
+            <option>Branding</option>
+
+            <option>Diseño editorial</option>
+
+            <option>Tipografía</option>
+
+        </select>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Mensaje *</label>
+
+        <textarea
+            placeholder="Escribí tu mensaje..."
+            required></textarea>
+
+    </div>
+
+    <div class="checkbox-group">
+
+        <label>
+
+            <input type="checkbox" required>
+
+            Acepto el tratamiento de los datos ingresados.
+
+        </label>
+
+    </div>
+
+    <div class="form-buttons">
+
+        <button type="reset">
+
+            Limpiar
+
+        </button>
+
+        <button type="submit">
+
+            Enviar
+
+        </button>
+
+    </div>
+
+</form>
 
     </main>
 

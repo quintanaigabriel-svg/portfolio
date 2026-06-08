@@ -226,6 +226,34 @@ nav li.active{
 
 }
 
+.contact-page{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:120px 80px;
+
+}
+
+.contact-header{
+
+    max-width:700px;
+
+}
+
+.contact-header h1{
+
+    font-size:88px;
+
+    font-weight:300;
+
+    line-height:1;
+
+    margin-bottom:40px;
+
+}
+
 .form-grid{
 
     display:grid;
