@@ -1,28 +1,15 @@
-/* ===================================
-   GABRIEL QUINTANA PORTFOLIO
-   Computación III - UNLa
-   HTML5 + CSS3 + JavaScript + jQuery
-=================================== */
-
+/* CSS DOCUMENT*/
 @charset "UTF-8";
 
-/* ===================================
-   RESET
-=================================== */
+
+
+/* aca empiezan las aplicaciones*/
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
-html{
-    scroll-behavior:smooth;
-}
-
-/* ===================================
-   ESTRUCTURA GENERAL
-=================================== */
 
 body{
 
@@ -35,10 +22,6 @@ body{
     padding:40px;
 
 }
-
-/* ===================================
-   NAVEGACION
-=================================== */
 
 nav{
 
@@ -81,16 +64,8 @@ nav li:hover{
 }
 
 nav li.active{
-
-    color:#000;
-
-    font-weight:600;
-
+    font-weight:700;
 }
-
-/* ===================================
-   HOME - GALERIA
-=================================== */
 
 .gallery{
 
@@ -122,13 +97,7 @@ nav li.active{
 
     display:block;
 
-    transition:transform .5s ease;
-
-}
-
-.card:hover img{
-
-    transform:scale(1.05);
+    transition:0.5s;
 
 }
 
@@ -144,7 +113,7 @@ nav li.active{
 
     height:100%;
 
-    background:rgba(0,0,0,.7);
+    background:rgba(0,0,0,0.7);
 
     color:white;
 
@@ -158,13 +127,18 @@ nav li.active{
 
     opacity:0;
 
-    transition:.4s ease;
+    transition:0.4s;
 
 }
-
 .card:hover .overlay{
 
     opacity:1;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
 
 }
 
@@ -192,31 +166,65 @@ nav li.active{
 
 }
 
-/* ===================================
-   FOOTER
-=================================== */
+nav li{
 
-footer{
-
-    margin-top:120px;
-
-    padding-top:40px;
-
-    border-top:1px solid #ddd;
+    cursor:pointer;
 
 }
 
-footer p{
+nav li.active{
 
-    font-size:13px;
+    color:#000;
 
-    color:#777;
+    font-weight:600;
 
 }
 
-/* ===================================
-   CONTACTO
-=================================== */
+.contact-page{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:120px 80px;
+
+}
+
+.contact-header{
+
+    margin-bottom:60px;
+
+}
+
+.contact-header h1{
+
+    font-size:64px;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+.contact-header p{
+
+    max-width:600px;
+
+    line-height:1.7;
+
+    color:#666;
+
+}
+
+/*FORMULARIO*/
+
+.contact-form{
+
+    max-width:900px;
+
+    margin-top:80px;
+
+}
 
 .contact-page{
 
@@ -232,8 +240,6 @@ footer p{
 
     max-width:700px;
 
-    margin-bottom:60px;
-
 }
 
 .contact-header h1{
@@ -245,24 +251,6 @@ footer p{
     line-height:1;
 
     margin-bottom:40px;
-
-}
-
-.contact-header p{
-
-    max-width:600px;
-
-    line-height:1.7;
-
-    color:#666;
-
-}
-
-.contact-form{
-
-    max-width:900px;
-
-    margin-top:80px;
 
 }
 
@@ -316,15 +304,7 @@ footer p{
 
 }
 
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus{
 
-    outline:none;
-
-    border-bottom:1px solid #000;
-
-}
 
 .form-group textarea{
 
@@ -376,14 +356,6 @@ footer p{
 
     font-family:inherit;
 
-    transition:.3s ease;
-
-}
-
-.form-buttons button:hover{
-
-    opacity:.8;
-
 }
 
 .form-buttons button[type="reset"]{
@@ -400,19 +372,67 @@ footer p{
 
 }
 
-/* ===================================
-   PAGINAS DE PROYECTO
-=================================== */
+@media(max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+
+    nav{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+    }
+
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .overlay h2{
+
+        font-size:24px;
+
+    }
+
+}
+
+/* paginas*/
 
 .project-page{
 
-    max-width:1200px;
+     max-width:1200px;
 
     margin:0 auto;
 
-    padding:120px 80px 80px;
+    padding-top:120px;
+
+    padding-left:80px;
+
+    padding-right:80px;
+
+    padding-bottom:80px;
 
 }
+
+
 
 .back-btn{
 
@@ -430,9 +450,11 @@ footer p{
 
 }
 
+
+
 .back-btn:hover{
 
-    opacity:.6;
+    opacity:0.6;
 
 }
 
@@ -446,6 +468,7 @@ footer p{
 
 .project-header h1{
 
+    
     font-size:56px;
 
     font-weight:500;
@@ -512,7 +535,7 @@ footer p{
 
     font-weight:400;
 
-    letter-spacing:.5px;
+    letter-spacing:0.5px;
 
     text-transform:uppercase;
 
@@ -526,13 +549,15 @@ footer p{
 
 }
 
-/* ===================================
-   RESPONSIVE
-=================================== */
+html{
 
-/* Tablet */
+    scroll-behavior:smooth;
 
-@media (max-width:1024px){
+}
+
+/*TABLET*/
+
+@media screen and (max-width:1024px){
 
     .project-page{
 
@@ -548,47 +573,19 @@ footer p{
 
 }
 
-/* Mobile */
+/*MOBILE*/
 
-@media (max-width:768px){
-
-    body{
-
-        padding:20px;
-
-    }
-
-    nav{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:20px;
-
-    }
-
-    nav ul{
-
-        flex-wrap:wrap;
-
-    }
-
-    .gallery{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .overlay h2{
-
-        font-size:24px;
-
-    }
+@media screen and (max-width:768px){
 
     .project-page{
 
-        padding:60px 25px 40px;
+        padding-top:60px;
+
+        padding-left:25px;
+
+        padding-right:25px;
+
+        padding-bottom:40px;
 
     }
 
@@ -606,21 +603,42 @@ footer p{
 
     }
 
+}
+@media screen and (max-width:480px){
+
+    .project-header h1{
+
+        font-size:34px;
+
+    }
+
+    .project-header p{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+    }
+
+}
+
+@media (max-width:768px){
+
     .contact-page{
 
         padding:60px 25px;
 
     }
 
-    .contact-header h1{
-
-        font-size:42px;
-
-    }
-
     .form-grid{
 
         grid-template-columns:1fr;
+
+    }
+
+    .contact-header h1{
+
+        font-size:42px;
 
     }
 
@@ -633,52 +651,3 @@ footer p{
     }
 
 }
-
-/* Small Mobile */
-
-@media (max-width:500px){
-
-    nav{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:20px;
-
-    }
-
-    nav ul{
-
-        flex-wrap:wrap;
-
-        gap:15px;
-
-    }
-
-    .gallery{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .project-page{
-
-        padding:60px 20px;
-
-    }
-
-    .project-header h1{
-
-        font-size:42px;
-
-    }
-
-    .contact-header h1{
-
-        font-size:42px;
-
-    }
-
-}
-
