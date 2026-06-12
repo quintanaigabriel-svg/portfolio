@@ -304,6 +304,14 @@ nav li.active{
 
 }
 
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+
+    outline:none;
+
+    border-bottom:1px solid #000;
+
 .form-group textarea{
 
     min-height:220px;
@@ -645,6 +653,51 @@ html{
         flex-direction:column;
 
         gap:10px;
+
+    }
+
+}
+@media (max-width:500px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        align-items:flex-start;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        gap:15px;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .project-page{
+
+        padding:60px 20px;
+
+    }
+
+    .project-header h1{
+
+        font-size:42px;
+
+    }
+
+    .contact-header h1{
+
+        font-size:42px;
 
     }
 
