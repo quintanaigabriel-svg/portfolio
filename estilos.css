@@ -131,7 +131,7 @@ nav li{
 
     letter-spacing:0.5px;
 
-    text-transform:uppercase;
+    text-transform:none;
 
 }
 
@@ -361,13 +361,17 @@ footer{
 
 .contact-header h1{
 
-    font-size:88px;
+    font-family:'Space Grotesk', sans-serif;
 
-    font-weight:300;
+    font-size:56px;
+
+    font-weight:400;
 
     line-height:1;
 
-    margin-bottom:40px;
+    letter-spacing:-1px;
+
+    margin-bottom:24px;
 
 }
 
@@ -571,7 +575,7 @@ footer{
 
     font-family:'Space Grotesk', sans-serif;
 
-    font-size:56px;
+    font-size:45px;
 
     font-weight:400;
 
@@ -580,6 +584,8 @@ footer{
     letter-spacing:-1px;
 
     margin-bottom:24px;
+
+    max-width:900px;
 
 }
 
